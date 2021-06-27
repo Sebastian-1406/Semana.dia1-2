@@ -1,0 +1,143 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+	font-family: 'Lexend Deca', sans-serif;
+
+}
+
+
+body{
+	background: hsl(233, 47%, 7%);
+	color: #eee;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.contenedor__flex{
+	margin: 85px 20px;
+	width: 375px;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	overflow: hidden;
+	background: hsl(244, 38%, 16%);
+}
+
+
+.contenido__imagen-mobile{
+	height: 280px;
+	position: relative;
+	background: hsl(277, 64%, 40%);
+}
+.contenido__imagen-pc{
+	display: none;
+	position: relative;
+	background: hsl(277, 64%, 40%);
+
+}
+.contenido__imagen-img{
+	width: 100%;
+	position: absolute;
+	opacity: .5;
+	height: 100%;
+}
+.contenido__informacion{
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 540px
+	
+
+}
+.contenido__informacion-titulo{
+	text-align: center;
+	font-size: 35px
+}
+.contenido__informacion-titulo-modificar{
+	color: hsl(277, 64%, 61%);
+}
+
+.contenido__informacion-parrafo{
+	text-align: center;
+	line-height:30px;
+	font-size: 18px;
+	color: 	hsla(0, 0%, 100%, 0.75);
+}
+
+.contenido__info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em
+}
+.contenido__info-titulo{
+	text-align: center;
+	text-transform: uppercase;
+	color: 	hsl(0, 0%, 100%);
+
+}
+.contenido__info-parrafo{
+	text-align: center;
+	text-transform: uppercase;
+	color: 	hsla(0, 0%, 100%, 0.6);
+}
+
+
+
+@media screen and (min-width:1000px){
+	body{
+		height: 100vh;
+		width: 100%;
+	}
+	.contenedor__flex{
+		width: 900px;
+		flex-direction: row;
+	}
+	.contenido__imagen-mobile{
+		display: none;
+		
+	}
+	.contenido__imagen-pc{
+		width: 540px;
+		display: inline-flex;
+		order: 5;
+		position: relative;
+	}
+	.contenido__informacion{
+		width: 565px;
+		height: 400px;
+		padding: 50px;
+		padding-right: 100px;
+
+	}
+	.contenido__informacion-titulo{
+		text-align: left;
+		font-size: 30px;
+	}
+	.contenido__informacion-parrafo{
+		text-align: left;
+		font-size: 13px
+	}
+	.contenido__info{
+		flex-direction: row;
+		justify-content: space-between
+	}
+	.contenido__info-titulo{
+		text-align: left;
+		
+	}
+	.contenido__info-parrafo{
+		text-align: left;
+		font-size: 13px
+	}
+	
+
+
+}
